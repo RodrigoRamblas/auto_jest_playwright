@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "web.browser":"npx playwright test --headed"
   },
   "devDependencies": {
     "@playwright/test": "^1.13.0"
