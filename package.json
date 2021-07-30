@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/RodrigoRamblas/auto_jest_playwright#readme",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "expect": "^27.0.6",
-    "playwright": "^1.13.0"
+    "playwright-video": "^2.4.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "jest-playwright-preset": "^1.7.0",
+    "playwright": "^1.13.1"
   }
 }

@@ -5,6 +5,8 @@ const expect = require('expect');
     const browser = await chromium.launch({headless:false});
     const context = await browser.newContext();
     const page = await context.newPage();
+
+    await page.setViewportSize({ width: 1280, height: 609 })
     await page.goto('https://www.bempromotora.com.br/');
     const titleTelaInicial = await page.title();
     expect(titleTelaInicial).toBe('Bem Promotora - Especialista em Crédito e Empréstimo Consignado');
