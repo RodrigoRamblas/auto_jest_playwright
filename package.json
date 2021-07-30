@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "rimraf -f screenshots; mkdir screenshots",
     "test": "jest"
   },
   "repository": {
@@ -20,11 +21,13 @@
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "expect": "^27.0.6",
+    "jest-html-reporters": "^2.1.6",
     "playwright-video": "^2.4.0"
   },
   "devDependencies": {
     "jest": "^27.0.6",
     "jest-playwright-preset": "^1.7.0",
-    "playwright": "^1.13.1"
+    "playwright": "^1.13.1",
+    "playwright-chromium": "^1.13.1"
   }
 }
